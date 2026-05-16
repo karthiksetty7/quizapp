@@ -1,0 +1,156 @@
+.report-question-item {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 40px;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.report-question-text {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* ================= OPTIONS ================= */
+
+.report-options-list-default,
+.report-options-list-image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.report-options-list-default li,
+.report-options-list-image li {
+  width: calc(50% - 9px);
+}
+
+.report-options-list-single {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.report-option-li {
+  list-style-type: none;
+}
+
+.report-option-wrapper {
+  min-height: 70px;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+.report-option-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Correct Answer */
+
+.correct-answer-option {
+  background-color: #16a34a;
+}
+
+.correct-answer-option
+  .report-option-text-content {
+  color: #ffffff;
+}
+
+/* Wrong Answer */
+
+.wrong-answer-option {
+  background-color: #dc2626;
+}
+
+.wrong-answer-option
+  .report-option-text-content {
+  color: #ffffff;
+}
+
+/* Option Text */
+
+.report-option-text-content {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #334155;
+  font-weight: 500;
+}
+
+/* Image Option */
+
+.report-option-img-item {
+  width: 130px;
+  border-radius: 8px;
+}
+
+/* Icons */
+
+.report-status-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* ================= UNATTEMPTED ================= */
+
+.unattempted-message-container {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.unattempted-message {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 17px;
+  font-style: italic;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 768px) {
+  .report-question-item {
+    padding: 20px;
+  }
+
+  .report-question-text {
+    font-size: 22px;
+  }
+
+  .report-options-list-default li,
+  .report-options-list-image li {
+    width: 100%;
+  }
+
+  .report-option-text-content {
+    font-size: 16px;
+  }
+
+  .report-option-wrapper {
+    padding: 16px;
+  }
+
+  .report-option-img-item {
+    width: 100px;
+  }
+}

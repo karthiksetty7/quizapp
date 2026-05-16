@@ -1,0 +1,79 @@
+/* This container ensures the card is centered and the background matches */
+.failure-view-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Adjust this height if it's inside a route with a Header */
+  min-height: 90vh; 
+  padding: 20px;
+}
+
+/* This creates the large white box seen in the second screenshot */
+.failure-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1000px; /* Large width to match target */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px; /* Generous vertical padding */
+  text-align: center;
+}
+
+/* Image scaling */
+.failure-image {
+  width: 450px;
+  max-width: 80%;
+  margin-bottom: 30px;
+}
+
+/* Typography matching the target exactly */
+.failure-heading {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.failure-description {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Button style with specific Sky Blue color */
+.retry-button {
+  background-color: #0ea5e9; 
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background-color: #0284c7;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .failure-card {
+    padding: 40px 10px;
+  }
+  .failure-image {
+    width: 250px;
+  }
+  .failure-heading {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,60 @@
+/* Main container with white background as seen in Desktop_Not_Found_View.png */
+.not-found-page-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content container */
+.not-found-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Image styling */
+.not-found-image {
+  width: 450px;
+  max-width: 90%;
+  margin-bottom: 40px;
+}
+
+/* Heading styling matching the slate color in target */
+.not-found-heading {
+  color: #475569;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Description styling */
+.not-found-description {
+  color: #64748b;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 450px;
+  margin: 0;
+}
+
+/* Mobile responsive adjustments for Not_Found_View_2.png */
+@media screen and (max-width: 768px) {
+  .not-found-image {
+    width: 300px;
+  }
+
+  .not-found-heading {
+    font-size: 24px;
+  }
+
+  .not-found-description {
+    font-size: 16px;
+    max-width: 300px;
+  }
+}

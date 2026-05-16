@@ -1,0 +1,112 @@
+/* ---------- HEADER CONTAINER ---------- */
+
+.header-container {
+  width: 100%;
+  height: var(--header-height);
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #d7dfe9;
+
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* IMPORTANT */
+
+  box-sizing: border-box;
+}
+
+/* ---------- HEADER CONTENT ---------- */
+
+.header-content {
+  width: 100%;
+  max-width: 1700px;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px;
+
+  box-sizing: border-box;
+}
+
+/* ---------- LOGO ---------- */
+
+.website-logo {
+  width: 100px;
+  height: auto;
+
+  display: block;
+}
+
+/* ---------- DESKTOP LOGOUT BUTTON ---------- */
+
+.logout-button {
+  width: 90px;
+  height: 36px;
+
+  background-color: transparent;
+
+  color: #7e858e;
+
+  border: 1px solid #7e858e;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #f8fafc;
+
+  border-color: #475569;
+  color: #475569;
+}
+
+/* ---------- MOBILE LOGOUT ---------- */
+
+.logout-icon-button {
+  background: transparent;
+  border: none;
+
+  color: #7e858e;
+
+  cursor: pointer;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: 64px;
+  }
+
+  .header-content {
+    padding: 0 16px;
+  }
+
+  .website-logo {
+    width: 80px;
+  }
+
+  .desktop-logout {
+    display: none;
+  }
+
+  .mobile-logout {
+    display: flex;
+  }
+}

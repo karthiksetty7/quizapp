@@ -1,0 +1,94 @@
+/* =========================================
+IMAGE OPTION ITEM
+========================================= */
+
+.image-option-item {
+width: 100%;
+list-style-type: none;
+}
+
+/* Wrapper for button and icon */
+.image-option-wrapper {
+display: flex;
+align-items: center;
+width: 100%;
+margin-bottom: 0; /* no extra gap to look like card */
+}
+
+/* Base button styles */
+.image-option-button,
+.correct-image-option,
+.wrong-image-option,
+.disabled-image-option {
+flex-grow: 1;
+background-color: transparent; /* flat background */
+border: none; /* remove all borders */
+border-radius: 0; /* no rounding */
+padding: 16px 0; /* vertical spacing */
+cursor: pointer;
+transition: all 0.3s ease;
+display: flex;
+justify-content: flex-start; /* align image/text left if needed */
+align-items: center;
+}
+
+/* Hover effect */
+.image-option-button:hover {
+background-color: #f8fafc;
+}
+
+/* Correct / Wrong state background only */
+.correct-image-option {
+background-color: #f0fff4; /* green background only */
+}
+
+.wrong-image-option {
+background-color: #fef2f2; /* red background only */
+}
+
+/* Disabled state */
+.disabled-image-option {
+  background-color: #f8fafc;
+  cursor: not-allowed;
+}
+
+/* Image styling */
+.option-image {
+width: 100%;
+height: auto;
+max-height: 220px;
+object-fit: contain;
+border-radius: 8px;
+}
+
+/* External icon container */
+.image-external-status-icon {
+width: 32px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 8px;
+}
+
+.image-option-status-icon {
+width: 22px;
+height: 22px;
+flex-shrink: 0;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+.option-image {
+max-height: 140px;
+}
+
+.image-external-status-icon {
+width: 28px;
+margin-left: 6px;
+}
+
+.image-option-status-icon {
+width: 20px;
+height: 20px;
+}
+}  

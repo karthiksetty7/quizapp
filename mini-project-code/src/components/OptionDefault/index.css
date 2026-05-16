@@ -1,0 +1,115 @@
+/* Option item */
+.default-option-item {
+  width: 100%;
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+/* New Wrapper to align button and icon horizontally */
+.option-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Shared styles for all button states */
+.default-option-button,
+.correct-option,
+.wrong-option,
+.disabled-option {
+  flex-grow: 1; /* Button takes all available space, pushing icon to the right */
+  min-height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 1px solid #d7dfe9;
+  text-align: left;
+}
+
+/* Default state */
+.default-option-button {
+  background-color: #ffffff;
+}
+
+.default-option-button:hover {
+  border-color: #263868;
+}
+
+/* Correct state (Green) */
+.correct-option {
+  background-color: #1c944b;
+  border: none;
+  cursor: not-allowed;
+}
+
+/* Wrong state (Red) */
+.wrong-option {
+  background-color: #bf2626;
+  border: none;
+  cursor: not-allowed;
+}
+
+/* Disabled/Unselected state after an answer is picked */
+.disabled-option {
+  background-color: #f1f5f9;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Text styles */
+.default-option-text {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* White text for selected correct/wrong buttons */
+.correct-option .default-option-text,
+.wrong-option .default-option-text {
+  color: #ffffff;
+}
+
+/* Status icon container sitting outside */
+.status-icon-container {
+  width: 40px; /* Fixed width prevents the button from shrinking/moving when icon appears */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px; /* Space between the button and the tick */
+}
+
+.option-status-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .default-option-button,
+  .correct-option,
+  .wrong-option,
+  .disabled-option {
+    min-height: 54px;
+    padding: 12px 18px;
+  }
+
+  .default-option-text {
+    font-size: 14px;
+  }
+
+  .status-icon-container {
+    width: 30px;
+    margin-left: 8px;
+  }
+
+  .option-status-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   PAGE CONTAINER
+========================================= */
+.home-page-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #fbe9e7 0%,
+    #d1c4e9 50%,
+    #bbdefb 100%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================
+   CONTENT AREA
+========================================= */
+.home-content-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: calc(var(--header-height, 80px) + 24px); /* ensure gap from header */
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+/* =========================================
+   MAIN CARD
+========================================= */
+.home-card {
+  width: 70%;
+  max-width: 1200px;
+  min-height: 72vh;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 48px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+.home-image {
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+.home-heading {
+  color: #0ea5e9;
+  font-family: 'Roboto';
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  max-width: 700px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+.home-description {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 30px;
+  max-width: 650px;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+.start-quiz-button {
+  background-color: #0ea5e9;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 34px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 32px;
+}
+
+.start-quiz-button:hover {
+  background-color: #0284c7;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   WARNING BOX
+========================================= */
+.warning-container {
+  background-color: #fef3c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  max-width: 650px;
+}
+
+.warning-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.warning-text {
+  color: #92400e;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* =========================================
+   LARGE DESKTOPS
+========================================= */
+@media screen and (min-width: 1600px) {
+  .home-card {
+    max-width: 1350px;
+    padding: 60px 70px;
+    min-height: 74vh;
+  }
+
+  .home-heading {
+    font-size: 42px;
+  }
+
+  .home-description {
+    font-size: 22px;
+  }
+
+  .home-image {
+    max-width: 400px;
+  }
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+@media screen and (max-width: 992px) {
+  .home-card {
+    width: 82%;
+    padding: 40px 32px;
+    min-height: 68vh;
+  }
+
+  .home-heading {
+    font-size: 30px;
+  }
+
+  .home-description {
+    font-size: 18px;
+  }
+
+  .home-image {
+    max-width: 300px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+@media screen and (max-width: 768px) {
+  .home-content-container {
+    padding-top: calc(var(--header-height, 80px) + 14px);
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+  .home-card {
+    width: 100%;
+    padding: 32px 20px;
+    border-radius: 16px;
+  }
+
+  .home-image {
+    max-width: 220px;
+    margin-bottom: 24px;
+  }
+
+  .home-heading {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+
+  .home-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .start-quiz-button {
+    width: auto;
+    min-width: 170px;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin-bottom: 24px;
+  }
+
+  .warning-container {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 14px;
+  }
+
+  .warning-text {
+    font-size: 13px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE DEVICES
+========================================= */
+@media screen and (max-width: 480px) {
+  .home-card {
+    padding: 28px 16px;
+  }
+
+  .home-heading {
+    font-size: 21px;
+  }
+
+  .home-description {
+    font-size: 15px;
+  }
+
+  .home-image {
+    max-width: 190px;
+  }
+
+  .warning-text {
+    font-size: 12px;
+  }
+}

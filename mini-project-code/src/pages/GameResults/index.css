@@ -1,0 +1,281 @@
+/* =========================================
+   RESULTS PAGE
+========================================= */
+
+.game-results-page-container {
+  height: 100vh;
+
+  background: linear-gradient(135deg, #f3e8ff 0%, #e0f2fe 100%);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   CONTENT CONTAINER
+========================================= */
+
+.game-results-content-container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   RESULT CARD
+========================================= */
+
+.result-card {
+  width: 68%;
+
+  max-width: 980px;
+
+  height: auto;
+
+  max-height: calc(100vh - 180px);
+
+  background-color: #ffffff;
+
+  border-radius: 20px;
+
+  padding: 38px 34px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+}
+
+/* =========================================
+   WIN CARD
+========================================= */
+
+.won-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/quiz-game-congratulations-bg.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.result-image {
+  width: 190px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 24px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.result-heading {
+  color: #334155;
+
+  font-size: 34px;
+  font-weight: 700;
+
+  margin-bottom: 12px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   PERCENTAGE
+========================================= */
+
+.percentage-text {
+  color: #0ea5e9;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  margin-bottom: 14px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   STATUS MESSAGE
+========================================= */
+
+.quiz-status-msg {
+  color: #475569;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  margin-bottom: 10px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   SCORE TEXT
+========================================= */
+
+.score-summary-text {
+  color: #64748b;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  margin-bottom: 28px;
+
+  max-width: 650px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.report-button-blue {
+  background-color: #0ea5e9;
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 13px 32px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  flex-shrink: 0;
+}
+
+
+.report-button-blue:hover {
+  background-color: #0284c7;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 992px) {
+  .result-card {
+    width: 85%;
+
+    padding: 40px 30px;
+  }
+
+  .result-image {
+    width: 190px;
+  }
+
+  .result-heading {
+    font-size: 34px;
+  }
+
+  .percentage-text {
+    font-size: 36px;
+  }
+
+  .score-summary-text {
+    font-size: 18px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 768px) {
+  .game-results-content-container {
+    padding-top: 90px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+  }
+
+  .result-card {
+    width: 100%;
+
+    max-height: calc(100vh - 110px);
+
+    padding: 30px 18px;
+
+    border-radius: 16px;
+  }
+
+  .result-image {
+    width: 130px;
+
+    margin-bottom: 22px;
+  }
+
+  .result-heading {
+    font-size: 26px;
+  }
+
+  .percentage-text {
+    font-size: 26px;
+  }
+
+  .quiz-status-msg {
+    font-size: 17px;
+  }
+
+  .score-summary-text {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 24px;
+  }
+
+  .report-button-blue {
+    width: 100%;
+
+    font-size: 16px;
+
+    padding: 13px 20px;
+  }
+}
